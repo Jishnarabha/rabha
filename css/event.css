@@ -1,0 +1,156 @@
+
+section{
+    width: 100%;
+    height: 100vh;
+    background-image: url("img\ \(15\).jpeg");
+    background-size: cover;
+}
+
+section .content{
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    transition: 2s;
+}
+
+section .leftBox .content:hover{
+    background: #740197;
+}
+
+section  .content h1{
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+section .leftBox .content p{
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+
+section .events{
+    position: relative;
+    width: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    float: right;
+    box-sizing: border-box;
+}
+
+section .events ul{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%);
+    margin: 0;
+    padding: 30px;
+    box-sizing: border-box;
+}
+section .events ul li{
+    list-style: none;
+    background: #fff;
+    box-sizing: border-box;
+    height: 170px;
+    margin: 15px 0;
+}
+section .events ul li .time{
+    position: relative;
+    padding: 80px;
+    background: #262626;
+    box-sizing: border-box;
+    width: 30px;
+    height: 100%;
+    float: left;
+    text-align: center;
+    transition: 5s;
+}
+
+section .events ul li:hover .time{
+    background: #740197;
+}
+
+section .events ul li .time h2{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 50%;
+    left: 505;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 60px;
+    line-height: 30px;
+
+}
+section .events ul li .time h2 span{
+    font-size: 30px;
+}
+
+section .events ul li .details{
+    padding: 20px;
+    background: #fff;
+    box-sizing: border-box;
+    width: 70%;
+    height: 100%;
+    float: left;
+
+}
+
+section .events ul li .details h3{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+}
+
+section .events ul li .details p{
+    position: relative;
+    margin: 10px 0 0;
+    padding: 0;
+    font-size: 16px;
+}
+section .events ul li .details a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 15px;
+    border: none;
+    margin-top: 8px;
+    font-size: 18px;
+    
+    transition: 2s;
+}
+section .events ul li .details a:hover{
+    background: #740197;
+    color: #fff;
+    background-color: #740197;
+}
+
+@media screen and (max-width:1000px) {
+    .content{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    
+    .events{
+        width: 100%;
+    }
+    .time{
+        width: 100%;
+    }
+    .details{
+        width: 100%;
+    }
+    
+}
+@media (max-width:700px) {
+    section .content .events .time .details h2 h3 p{
+        flex: 100%;
+        max-width: 80%;
+        padding: 100%;
+
+    }
+    section .content .events .time .details h2 h3 p{
+        flex: 100%;
+        max-width: 80%;
+        padding: 100%;
+        margin: 20px;
+    }
+}
